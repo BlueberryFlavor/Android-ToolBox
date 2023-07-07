@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activity.HotVideoDetailActivity">
+    <TextView
+        android:id="@+id/tc_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新闻标题"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:background="@color/pink"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textStyle="normal">
+
+    </TextView>
+
+
+</LinearLayout>

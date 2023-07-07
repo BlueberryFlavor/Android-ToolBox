@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.WeatherActivity">
+
+    <!--标题栏-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weatherstr"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <!--下拉选项框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@string/choicecity"/>
+        <!--下拉列表-->
+        <!--省份-->
+        <Spinner
+            android:id="@+id/spinner_province"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <!--城市-->
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <!--城区-->
+        <Spinner
+            android:id="@+id/spinner_district"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_weatherquery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/weatherquery"
+            android:textColor="@color/white"
+            android:textSize="17.5sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_lifequery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lifequery"
+            android:textColor="@color/white"
+            android:textSize="17.5sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

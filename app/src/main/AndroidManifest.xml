@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.itcast.f13_final_application">
+    <!-- 网络权限申请 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+<!--    android:label="@string/app_name"-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.F13finalApplication">
+        <activity
+            android:name=".activity.VideosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MenuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PhoneQueryActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.WeatherActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.NewsActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.OneActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity.TwoActivity"
+            android:exported="true"></activity>
+    </application>
+
+</manifest>

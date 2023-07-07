@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+<!--    <ImageView-->
+<!--        android:layout_width="94dp"-->
+<!--        android:layout_height="94dp"-->
+<!--        android:layout_margin="3dp"-->
+<!--        android:background="@drawable/bg_news" />-->
+    <ImageView
+        android:id="@+id/img_newscover"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/tixing" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_newstitle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:ellipsize="end"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="新闻头条标题"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="vertical">-->
+<!--        &lt;!&ndash;热度值&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@mipmap/horn1" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_newsauthor"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:text="鼠族日报" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;点赞数量&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@mipmap/bg" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_newsDate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:text="2022.6.16" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;评论数&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_width="15dp"-->
+<!--                android:layout_height="15dp"-->
+<!--                android:src="@mipmap/comment" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_newscomment"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="16sp"-->
+<!--                android:text="1024" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_weight="3"
+                        android:background="@color/white1"
+                        android:gravity="center"
+                        android:text="title:" />
+
+                    <TextView
+                        android:id="@+id/tv_newstitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:background="@color/blue1"
+                        android:text="【待输入:标题】" />
+                </LinearLayout>
+
+                <!--            <TextView-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="20dp"-->
+                <!--                android:layout_weight="3"-->
+                <!--                android:background="@color/blue"-->
+                <!--                android:gravity="center"-->
+                <!--                android:text="Image:" />-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/tv_newsthumbnail"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="20dp"-->
+                <!--                android:layout_weight="1"-->
+                <!--                android:background="@color/blue"-->
+                <!--                android:text="【待输入:图片】" />-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="3"
+                    android:background="@color/white1"
+                    android:gravity="center"
+                    android:text="date:" />
+
+                <TextView
+                    android:id="@+id/tv_newsdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue1"
+                    android:textStyle="bold"
+                    android:text="【待输入:时间】" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="3"
+                    android:background="@color/white1"
+                    android:gravity="center"
+                    android:text="author:" />
+
+                <TextView
+                    android:id="@+id/tv_newsauthorname"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue1"
+                    android:textStyle="bold"
+                    android:text="【待输入:作者】" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="3"
+                    android:background="@color/white1"
+                    android:gravity="center"
+                    android:text="URL:" />
+
+                <TextView
+                    android:id="@+id/tv_newsurl"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue1"
+                    android:textStyle="bold"
+                    android:text="【待输入:链接】" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_weight="3"
+                                android:background="@color/white1"
+                                android:gravity="center"
+                                android:text="Image:" />
+
+                            <TextView
+                                android:id="@+id/tv_newsImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:background="@color/blue1"
+                                android:textStyle="bold"
+                                android:text="【待输入:图片】" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

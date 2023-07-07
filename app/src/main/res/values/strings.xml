@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">【F13·FINAL】</string>
+    <string name="phonestr">【手机号】</string>
+    <string name="querystr">【查询】</string>
+
+
+    <string name="weatherstr">【天气和生活指数查询】</string>
+
+    <string name="choicecity">【选择查询城市】</string>
+    <string name="weatherquery">【天气查询】</string>
+    <string name="lifequery">【生活指数查询】</string>
+    <string name="hotvideostr">【热门视频】</string>
+    <string name="newsstr">【新闻头条】</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

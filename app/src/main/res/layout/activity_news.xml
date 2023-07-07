@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NewsActivity">
+
+    <!--标题-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:text="@string/newsstr"/>
+
+    <ListView
+        android:id="@+id/listview_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--该控件在请求数据失败或者listview数据为空时，展示给用户。正常有数据时，该控件隐藏-->
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="暂无数据，请稍后重试!"/>
+
+</LinearLayout>
